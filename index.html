@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function () {
+        if (xmlhttp.readyState == XMLHttpRequest.DONE) {
+            console.log(xmlhttp.status, xmlhttp.responseText);
+        }
+    }
+    xmlhttp.open('GET', 'http://apilaravel.php.local/api/bancos');
+    xmlhttp.setRequestHeader('Authorization', 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImFhMTVhZjAyM2Q3NTdkMDMxMzQyMGIxZWZkMjFhZTUwOGJlNGZmZGI3ZjBhYjY0MDRiNzBlMzc0MDJjMmRmNTdiOWIyNjQwYTE1NWFiNGU5In0.eyJhdWQiOiIyIiwianRpIjoiYWExNWFmMDIzZDc1N2QwMzEzNDIwYjFlZmQyMWFlNTA4YmU0ZmZkYjdmMGFiNjQwNGI3MGUzNzQwMmMyZGY1N2I5YjI2NDBhMTU1YWI0ZTkiLCJpYXQiOjE1MDIyOTkyNTAsIm5iZiI6MTUwMjI5OTI1MCwiZXhwIjoxNTMzODM1MjUwLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.Hn3Avalv6eiIWihnzDQ1hApfdNnBxAWkVtPfY3dZ0f9EiMjibnxfGD68mxlrbPH62BkSbzqdYDVZdcNIlEEgByuSYeR_vcyUSnYvkijgAr9b1DMwTUh05egxGBQ0qKtddYN4AaTPzmTXjj1S9ltXaSIC8RC6i0uAviJF3IlHw55f7EdWSLcuXFDSwHWDYLSILxPLI2ypsyztNOSHSGYzWdc_UJMrplBu8GOH4bgc02Fba7HFzvhScZkjBU6V7teK1ci2r9RGfNDhstZtg7J0QKYer9Qt3-1dlYDbVROaJgovDD_grL_GRqYSgHE6BSfUEjyI5F-ANoOeoeR9ZJEFRbpp7L-XeYsN5y_9QNELyTW-nwNL-i8t1TVj9VtGoq0y-AQnDwsFdoc4OoUZncCBvUaRda03AVdEV-G_71tskqPejGrs3EmBPjuXmy58lE6dVFofYxX7NgUUiBd__oHDbTZKKkj1goNt8FduD8C5PRTYD4GAp7dfOA1RZKe-9QhWgnrzXUc-Aic7tBK4RuSGiawcwM9NOZjEgbq2KAtMn0lkOIkrFc5ADZTgXNM1pwG3lfWdA8v0IBnLAZKb8VN7uUGDV1UrzVSYmxsoBFMlIsRV8tthi1R1ki9o9CdZU9dTOO_hq8JAWTZlUhXPqPmOhbo9IwB5oQTaz86qXPomICA');
+    xmlhttp.send();
+</script>
+</body>
+</html>
