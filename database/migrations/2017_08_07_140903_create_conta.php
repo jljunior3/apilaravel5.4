@@ -22,7 +22,7 @@ class CreateConta extends Migration
             $table->integer('numero_conta');
             $table->decimal('balanco',11,2);
             $table->decimal('balanco_inicial',11,2);
-            $table->integer('bank_id');
+            $table->integer('banco_id');
             $table->timestamps();
         });
     }
